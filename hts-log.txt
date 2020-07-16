@@ -1,0 +1,18 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 07 Jul 2020 15:12:50 at http://www.southpackers.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.southpackers.com/ -O1 "C:\Users\Administrator\Desktop\packers and movers\packers and movers" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:16:29	Error: 	"Not Found" (404) at link www.southpackers.com/maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css (from www.southpackers.com/)
+15:16:55	Error: 	"Not Found" (404) at link www.southpackers.com/tel/MS_9.html (from www.southpackers.com/)
+15:18:53	Error: 	"Not Found" (404) at link www.southpackers.com/movers_and_packers_in_jamia_nagar.html (from www.southpackers.com/)
+15:19:07	Warning: 	File not parsed, looks like binary: www.southpackers.com/css/openhand.cur
+15:19:07	Warning: 	File not parsed, looks like binary: www.southpackers.com/css/closedhand.cur
+15:19:19	Error: 	"Not Found" (404) at link www.southpackers.com/maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css (from www.southpackers.com/about.html)
+15:19:20	Error: 	"Not Found" (404) at link www.southpackers.com/blog.html (from www.southpackers.com/packing_and_unpacking.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 6 minutes 30 seconds : 211 links scanned, 205 files written (10933632 bytes overall) [10798475 bytes received at 27688 bytes/sec], 268381 bytes transferred using HTTP compression in 1 files, ratio 29%, 3.2 requests per connection
+(5 errors, 2 warnings, 0 messages)
