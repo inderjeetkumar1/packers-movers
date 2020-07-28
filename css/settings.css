@@ -757,14 +757,14 @@ img.tp-slider-alternative-image	{
 	font-size: 13px;
 	font-weight: normal;
 	color: #7f8c8d;
-	color: #ffffff;
+	color: #F7F701;
 	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	letter-spacing: 2px;
 }
 .rev-scroll-btn > *:hover,
 .rev-scroll-btn > *:focus,
 .rev-scroll-btn > *.active {
-	color: #ffffff;
+	color: #F7F701;
 }
 .rev-scroll-btn > *:hover,
 .rev-scroll-btn > *:focus,
@@ -889,8 +889,8 @@ img.tp-slider-alternative-image	{
 
 .tp-caption img {
 	background: transparent;
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00F7F701,endColorstr=#00F7F701)";
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00F7F701,endColorstr=#00F7F701);
 	zoom: 1;
 }
 
