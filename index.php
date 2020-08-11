@@ -1727,7 +1727,7 @@ transform:translateX(0)
     <div class="container">
       <div class="row">
         <div class="logo-area clearfix">
-          <div class="logo col-xs-12 col-md-3"> <a href="index.php"> <img src="images/packers-and-movers-logo.png" alt="DHL Packers and Movers" title="DHL Packers and Movers" /> </a> </div>
+          <div class="logo col-xs-12 col-md-3"> <a href="index.html"> <img src="images/packers-and-movers-logo.png" alt="DHL Packers and Movers" title="DHL Packers and Movers" /> </a> </div>
           <div class="col-xs-12 col-md-9 header-right">
             <ul class="top-info-box">
               <li><img src="images/iso1.jpg" ></li>
@@ -1762,7 +1762,7 @@ transform:translateX(0)
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
               <div class="collapse navbar-collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav">
-                  <li class="active"><a href="index.php" title="Top Packers And Movers in Gurgaon">Home</a></li>
+                  <li class="active"><a href="index.html" title="Top Packers And Movers in Gurgaon">Home</a></li>
                   <li><a href="about.html" title="Best Movers And Packers in Gurgaon">About Us</a></li>
                   <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Safe Packers And Movers in Gurgaon">Services <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown-menu" role="menu">
@@ -2484,7 +2484,7 @@ frmvalidator.addValidation("email","email","Please enter a valid email address")
            <div class="col-md-3 col-xs-12 col-sm-6 footer-widget">
 <h3 class="widget-title">Important Links</h3>
 <ul class="list-arrow">
-<li><a href="index.php" title="best movers and packers Gurgaon">Home</a></li>
+<li><a href="index.html" title="best movers and packers Gurgaon">Home</a></li>
 <li><a href="about.html" title="top packers and movers Gurgaon">About</a></li>
 <li><a href="services.html" title="packers and movers services Gurgaon">Services</a></li>
 
