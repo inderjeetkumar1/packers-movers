@@ -1,1 +1,335 @@
-jQuery(function(e){"use strict";function a(){e(".preload").length&&e(".preload").delay(220).fadeOut(500)}e(window).on("scroll",function(){e(window).scrollTop()>70?e(".site-navigation, .header-white, .header").addClass("navbar-fixed"):e(".site-navigation, .header-white, .header").removeClass("navbar-fixed")}),jQuery(".nav.navbar-nav li a").on("click",function(){jQuery(this).parent("li").find(".dropdown-menu").slideToggle(),jQuery(this).find("i").toggleClass("fa-angle-down fa-angle-up")}),e("#main-slide").carousel({pause:!0,interval:1e5}),e(".nav-search").on("click",function(){e(".search").fadeIn(500)}),e(".search-close").on("click",function(){e(".search").fadeOut(500)}),e("#project-slide").owlCarousel({loop:!0,animateOut:"fadeOut",nav:!0,margin:15,dots:!1,mouseDrag:!0,touchDrag:!0,slideSpeed:800,navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],items:4,responsive:{0:{items:2},600:{items:4}}}),e("#testimonial-slide").owlCarousel({loop:!1,margin:30,nav:!1,dots:!0,items:3,responsive:{0:{items:1},600:{items:2}}}),e("#testimonial-slide2").owlCarousel({loop:!1,margin:30,nav:!1,dots:!0,items:3,responsive:{0:{items:1},600:{items:1}}}),e("#partners-carousel").owlCarousel({loop:!0,margin:20,nav:!1,dots:!1,mouseDrag:!0,touchDrag:!0,items:5,responsive:{0:{items:2},600:{items:5}}}),e(".page-slider").owlCarousel({loop:!0,animateOut:"fadeOut",autoplay:!0,autoplayHoverPause:!0,nav:!0,margin:0,dots:!1,mouseDrag:!0,touchDrag:!0,slideSpeed:500,navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],items:1,responsive:{0:{items:1},600:{items:1}}}),e("#team-slide").owlCarousel({loop:!1,animateOut:"fadeOut",nav:!0,navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],margin:20,dots:!1,mouseDrag:!0,touchDrag:!0,slideSpeed:800,items:4,responsive:{0:{items:1},480:{items:2},1e3:{items:4,loop:!1}}}),e(document).ready(function(){e(".gallery-popup").colorbox({rel:"gallery-popup",transition:"fade",innerHeight:"500"}),e(".popup").colorbox({iframe:!0,innerWidth:600,innerHeight:400})}),e(".counterUp").counterUp({delay:10,time:1e3}),e("#contact-form").submit(function(){var a=e(this),o=a.find(".error-container"),i=a.attr("action");return o.slideUp(750,function(){o.hide();var t=a.find(".form-control-name"),n=a.find(".form-control-email"),s=a.find(".form-control-subject"),l=a.find(".form-control-message");e.post(i,{name:t.val(),email:n.val(),subject:s.val(),message:l.val()},function(e){o.html(e),o.slideDown("slow"),null!=e.match("success")&&(t.val(""),n.val(""),s.val(""),l.val(""))})}),!1}),e(window).scroll(function(){e(this).scrollTop()>50?e("#back-to-top").fadeIn():e("#back-to-top").fadeOut()}),e("#back-to-top").on("click",function(){return e("#back-to-top").tooltip("hide"),e("body,html").animate({scrollTop:0},800),!1}),e("#back-to-top").tooltip("hide"),e(window).on("load",function(){a()})});
+/*
+	Template Name: Cornike - Business HTML5 Template
+	Author: Tripples
+	Author URI: https://themeforest.net/user/tripples
+	Description: Cornike - Business HTML5 Template
+	Version: 1.0
+
+
+	1. Fixed header
+	2. Main slideshow
+	3. Site search
+	4. Owl Carousel
+	5. Video popup
+	6. Counter
+	7. Contact form
+	8. Back to top
+  
+*/
+
+
+jQuery(function($) {
+  "use strict";
+
+  	/* Pre loader */
+
+	function handlePreloader() {
+
+		if($('.preload').length){
+			$('.preload').delay(220).fadeOut(500);
+		}
+	}
+
+	/* ----------------------------------------------------------- */
+	/*  Fixed header
+	/* ----------------------------------------------------------- */
+
+	$(window).on('scroll', function(){
+		if ( $(window).scrollTop() > 70 ) {
+			$('.site-navigation, .header-white, .header').addClass('navbar-fixed');
+		} else {
+			$('.site-navigation, .header-white, .header').removeClass('navbar-fixed');
+		}
+	});
+
+	/* ----------------------------------------------------------- */
+	/*  Mobile Menu
+	/* ----------------------------------------------------------- */
+
+	jQuery(".nav.navbar-nav li a").on("click", function() { 
+		jQuery(this).parent("li").find(".dropdown-menu").slideToggle();
+		jQuery(this).find("i").toggleClass("fa-angle-down fa-angle-up");
+	});
+
+
+	/* ----------------------------------------------------------- */
+	/*  Main slideshow
+	/* ----------------------------------------------------------- */
+
+		$('#main-slide').carousel({
+			pause: true,
+			interval: 100000,
+		});
+
+
+	/* ----------------------------------------------------------- */
+  /*  Site search
+  /* ----------------------------------------------------------- */
+
+
+
+	 $('.nav-search').on('click', function () {
+		 $('.search').fadeIn(500);
+	});
+
+	 $('.search-close').on('click', function(){
+			  $('.search').fadeOut(500);
+	 });
+
+
+
+  /* ----------------------------------------------------------- */
+  /*  Owl Carousel
+  /* ----------------------------------------------------------- */
+
+
+		//Project slide
+
+		$("#project-slide").owlCarousel({
+
+			loop:true,
+			animateOut: 'fadeOut',
+			nav:true,
+			margin:15,
+			dots:false,
+			mouseDrag:true,
+			touchDrag:true,
+			slideSpeed:800,
+			navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+			items : 4,
+			responsive:{
+			  0:{
+					items:2
+			  },
+			  600:{
+					items:4
+			  }
+			}
+
+		});
+
+
+		//Testimonial slide
+
+		$("#testimonial-slide").owlCarousel({
+
+			loop:false,
+			margin:30,
+			nav:false,
+			dots:true,
+			items : 3,
+			responsive:{
+			  0:{
+					items:1
+			  },
+
+
+			  600:{
+					items:2
+			  }
+			}
+
+		});
+
+		//Testimonial slide 2
+
+		$("#testimonial-slide2").owlCarousel({
+
+			loop:false,
+			margin:30,
+			nav:false,
+			dots:true,
+			items : 3,
+			responsive:{
+			  0:{
+					items:1
+			  },
+
+
+			  600:{
+					items:1
+			  }
+			}
+
+		});
+
+
+
+		//Partners slide
+
+		$("#partners-carousel").owlCarousel({
+
+			loop:true,
+			margin:20,
+			nav:false,
+			dots:false,
+			mouseDrag:true,
+			touchDrag:true,
+			items : 5,
+			responsive:{
+			  0:{
+					items:2
+			  },
+			  600:{
+					items:5
+			  }
+			}
+
+		});
+
+		 //Page slide
+
+		$(".page-slider").owlCarousel({
+
+			loop:true,
+			animateOut: 'fadeOut',
+			autoplay:true,
+			autoplayHoverPause:true,
+			nav:true,
+			margin:0,
+			dots:false,
+			mouseDrag:true,
+			touchDrag:true,
+			slideSpeed:500,
+			navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+			items : 1,
+			responsive:{
+			  0:{
+					items:1
+			  },
+			  600:{
+					items:1
+			  }
+			}
+
+		});
+
+
+		 //Team slide
+
+		 $("#team-slide").owlCarousel({
+
+			loop:false,
+			animateOut: 'fadeOut',
+			nav:true,
+			navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+			margin:20,
+			dots:false,
+			mouseDrag:true,
+			touchDrag:true,
+			slideSpeed:800,
+			items : 4,
+			responsive:{
+				0:{
+				items:1
+				},
+				480:{
+					items:2
+				},
+				1000:{
+					items:4,
+					loop:false
+				}
+			}
+
+		});
+
+
+	/* ----------------------------------------------------------- */
+	/*  Video popup
+	/* ----------------------------------------------------------- */
+	  $(document).ready(function(){
+
+			$(".gallery-popup").colorbox({rel:'gallery-popup', transition:"fade", innerHeight:"500"});
+
+			$(".popup").colorbox({iframe:true, innerWidth:600, innerHeight:400});
+
+	  });
+
+
+
+	/* ----------------------------------------------------------- */
+	/*  Counter
+	/* ----------------------------------------------------------- */
+
+		$('.counterUp').counterUp({
+		 delay: 10,
+		 time: 1000
+		});
+
+
+	
+	/* ----------------------------------------------------------- */
+	/*  Contact form
+	/* ----------------------------------------------------------- */
+
+	$('#contact-form').submit(function(){
+
+		var $form = $(this),
+			$error = $form.find('.error-container'),
+			action  = $form.attr('action');
+
+		$error.slideUp(750, function() {
+			$error.hide();
+
+			var $name = $form.find('.form-control-name'),
+				$email = $form.find('.form-control-email'),
+				$subject = $form.find('.form-control-subject'),
+				$message = $form.find('.form-control-message');
+
+			$.post(action, {
+					name: $name.val(),
+					email: $email.val(),
+					subject: $subject.val(),
+					message: $message.val()
+				},
+				function(data){
+					$error.html(data);
+					$error.slideDown('slow');
+
+					if (data.match('success') != null) {
+						$name.val('');
+						$email.val('');
+						$subject.val('');
+						$message.val('');
+					}
+				}
+			);
+
+		});
+
+		return false;
+
+	});
+
+
+	/* ----------------------------------------------------------- */
+	/*  Back to top
+	/* ----------------------------------------------------------- */
+
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				 $('#back-to-top').fadeIn();
+			} else {
+				 $('#back-to-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-to-top').on('click', function () {
+			 $('#back-to-top').tooltip('hide');
+			 $('body,html').animate({
+				  scrollTop: 0
+			 }, 800);
+			 return false;
+		});
+		
+		$('#back-to-top').tooltip('hide');
+
+		/* Preloade */
+
+		$(window).on('load', function() {
+			handlePreloader();
+		});
+
+});

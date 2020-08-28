@@ -1,1 +1,59 @@
-jQuery(function(t){if(t.fn.isotope){var e=t(window);e.load(function(){var i=t(".isotope");i.each(function(){var i,o=t(this),a=o.attr("id"),n=o.data("isotopeMode")||"fitRows";o.isotope({itemSelector:".isotope-item",layoutMode:n,animationOptions:{duration:400,queue:!1}}),e.resize(function(){clearTimeout(i),i=setTimeout(function(){o.isotope("layout")},150)});var s=t('[data-isotope-nav="'+a+'"]');s.length&&s.find("a").click(function(e){var i=t(this);if(!i.hasClass("active")){var a=i.attr("data-filter");i.parents("ul").eq(0).find(".active").removeClass("active"),i.addClass("active"),o.isotope({filter:a})}e.preventDefault()}),e.resize()})})}});
+jQuery(function($){
+
+	//region Isotope
+	if($.fn.isotope) {
+
+		var $w = $(window);
+
+		$w.load(function () {
+			var $isotops = $('.isotope');
+
+			$isotops.each(function () {
+				var $el = $(this),
+					id = $el.attr('id'),
+					mode = $el.data('isotopeMode') || 'fitRows',
+					tmt;
+
+
+				$el.isotope({
+					itemSelector: '.isotope-item',
+					layoutMode: mode,
+					animationOptions: {
+						duration: 400,
+						queue: false
+					}
+				});
+
+
+				$w.resize(function(){
+					clearTimeout(tmt);
+					tmt = setTimeout(function(){
+						$el.isotope('layout');
+					}, 150);
+				});
+
+				var $menu = $('[data-isotope-nav="' + id + '"]');
+
+				if ($menu.length) {
+					$menu.find('a').click(function (e) {
+						var $link = $(this);
+						if(!$link.hasClass('active')){
+							var selector = $link.attr('data-filter');
+							$link.parents('ul').eq(0).find('.active').removeClass('active');
+							$link.addClass('active');
+							$el.isotope({ filter: selector });
+						}
+						e.preventDefault();
+					});
+				}
+
+				$w.resize();
+
+			});
+
+		});
+
+	}
+	//endregion
+
+});
