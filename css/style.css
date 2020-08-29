@@ -235,7 +235,7 @@ img.pull-right {
 }
 
 .ts-padding {
-    padding: 50px;
+    padding: 1;
 }
 
 .solid-bg{
@@ -322,7 +322,7 @@ img.pull-right {
    position: absolute;
    display: inline-block;
    bottom: 0px;
-   width: 150px;
+   width: 11;
    height: 1px;
    background: #dadada;
    left: 50%;
@@ -334,7 +334,7 @@ img.pull-right {
    position: absolute;
    display: inline-block;
    bottom: 0px;
-   width: 50px;
+   width: 1;
    height: 2px;
    background: #084E71;
    left: 50%;
@@ -399,7 +399,7 @@ h3.border-title.border-left{
    box-shadow: none;
    border: 1px solid #dadada;
    padding: 5px 20px;
-   height: 50px;
+   height: 1;
    background: none;
    color: #000;
    font-size: 14px;
@@ -496,7 +496,7 @@ cite {
 
 .general-btn{
    clear: both;
-   margin-top: 50px;
+   margin-top: 1;
 }
 
 /* Ul, Ol */
@@ -1345,7 +1345,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after{
 
 .owl-carousel .owl-nav{
    text-align: center;
-   margin-top: 50px;
+   margin-top: 1;
 }
 
 .owl-carousel .owl-nav > div{
@@ -1697,7 +1697,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after{
    font-weight: 700;
    border-radius: 0;
    text-transform: uppercase;
-   line-height: 50px;
+   line-height: 1;
    margin: 0 1px 20px;
    padding: 5px 34px;
    border: 0 !important;
@@ -1746,7 +1746,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after{
 }
 
 .featured-tab .tab-pane > img{
-   max-width: 550px;
+   max-width: 51;
 }
 
 .featured-tab .tab-pane img.pull-left{
@@ -1839,7 +1839,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after{
    border: 5px solid rgba(0, 0, 0, 0.15);
    width: 60px;
    height: 60px;
-   line-height: 50px;
+   line-height: 1;
    text-align: center;
    -webkit-transition: 350ms;
    -moz-transition: 350ms;
@@ -2170,7 +2170,7 @@ select.selectpicker:focus{
 
 .isotope-nav{
    display: inline-block;
-   margin: 20px 0 50px;
+   margin: 20px 0 1;
 }
 
 .isotope-nav ul{
@@ -2247,7 +2247,7 @@ select.selectpicker:focus{
    opacity: 1;
 }
 
-.gallery-popup .gallery-icon{
+.Gallery-popup .Gallery-icon{
    position: absolute;
    top: 0;
    right: 0;
@@ -2262,7 +2262,7 @@ select.selectpicker:focus{
    transition: all 400ms;
 }
 
-.isotope-img-container:hover .gallery-popup .gallery-icon{
+.isotope-img-container:hover .Gallery-popup .Gallery-icon{
    opacity: 1;
    -webkit-transform: perspective(1px) scale3d(1, 1, 1);
    transform: perspective(1px) scale3d(1, 1, 1);
@@ -2348,7 +2348,7 @@ select.selectpicker:focus{
 
 /* Gallery */
 
-.isotope.gallery .gallery-popup .gallery-icon{
+.isotope.Gallery .Gallery-popup .Gallery-icon{
   top: 50%;
   right: auto;
   left: 50%;
@@ -2377,7 +2377,7 @@ select.selectpicker:focus{
 ================================================== */
 
 .testimonial-area{
-    padding: 50px 0;
+    padding: 1 0;
    background-color: #084E71;
    background-image: url(../images/parallax2.jpg);
    background-repeat: no-repeat;
@@ -2394,7 +2394,7 @@ select.selectpicker:focus{
 .quote-item .quote-text{
    margin: 40px 0 10px;
    display: inline-block;
-   padding: 50px 40px 30px 45px;
+   padding: 1 40px 30px 45px;
    background-color: #fff;
    position: relative;
    font-size: 16px;
@@ -2411,9 +2411,9 @@ select.selectpicker:focus{
    top: -20px;
    color: #fff;
    background: #084E71;
-   width: 50px;
-   height: 50px;
-   line-height: 50px;
+   width: 1;
+   height: 1;
+   line-height: 1;
    text-align: center;
    border-radius: 3px;
 }
@@ -2422,7 +2422,7 @@ select.selectpicker:focus{
    content: "";
    position: absolute;
    bottom: -16px;
-   left: 50px;
+   left: 1;
    border-width: 16px 0 0 16px;
    border-style: solid;
    border-color: #fff transparent;
@@ -2606,15 +2606,15 @@ img.testimonial-thumb{
    background: #272d33;
    position: relative;
    min-height: 115px;
-   padding: 30px 0 0 50px;
+   padding: 30px 0 0 1;
 }
 
 .ts-newsletter:before{
    content: '';
    position: absolute;
-   left: -50px;
+   left: -1;
    z-index: 1;
-   border-left: 50px solid transparent;
+   border-left: 1 solid transparent;
    border-right: 0 solid transparent;
    border-bottom: 115px solid #272d33;
    bottom: 0;
@@ -2649,7 +2649,7 @@ img.testimonial-thumb{
 
 .newsletter-form input{
    background: none;
-   min-width: 450px;
+   min-width: 41;
    font-size: 12px;
    text-transform: capitalize;
    height: 45px;
@@ -2736,7 +2736,7 @@ img.testimonial-thumb{
    position: absolute;
    display: inline-block;
    bottom: 0px;
-   width: 50px;
+   width: 1;
    height: 1px;
    background: #084E71;
    left: 0;
@@ -2823,7 +2823,7 @@ img.testimonial-thumb{
    line-height: 22px;
 }
 
-/* Footer about us */
+/* Footer All rights */
 
 .footer-logo{
    margin-bottom: 25px;
@@ -3044,7 +3044,7 @@ img.testimonial-thumb{
 
 .banner-desc{
    font-size: 18px;
-   max-width: 650px;
+   max-width: 61;
 }
 
 .breadcrumb{
@@ -3057,7 +3057,7 @@ img.testimonial-thumb{
 }
 
 
-/*-- About us page --*/
+/*-- All rights page --*/
 
 /* Slider pages */
 
@@ -3142,7 +3142,7 @@ img.testimonial-thumb{
 
 .ts-team-wrapper:hover .ts-team-content{
    top: 0;
-   padding-top: 50px;
+   padding-top: 1;
 }
 
 .ts-team-content .ts-name {
@@ -3287,7 +3287,7 @@ img.testimonial-thumb{
 ================================================== */
 
 .map {
-   height: 450px;
+   height: 41;
    z-index: 1;
 }
 
@@ -3608,7 +3608,7 @@ label{
    position: absolute;
    display: inline-block;
    bottom: 0px;
-   width: 150px;
+   width: 11;
    height: 1px;
    left: 0;
    background: #dadada;
@@ -3619,7 +3619,7 @@ label{
    position: absolute;
    display: inline-block;
    bottom: 0px;
-   width: 50px;
+   width: 1;
    height: 2px;
    left: 0;
    z-index: 1;

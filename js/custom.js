@@ -240,7 +240,7 @@ jQuery(function($) {
 	/* ----------------------------------------------------------- */
 	  $(document).ready(function(){
 
-			$(".gallery-popup").colorbox({rel:'gallery-popup', transition:"fade", innerHeight:"500"});
+			$(".Gallery-popup").colorbox({rel:'Gallery-popup', transition:"fade", innerHeight:"500"});
 
 			$(".popup").colorbox({iframe:true, innerWidth:600, innerHeight:400});
 
