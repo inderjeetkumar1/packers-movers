@@ -1845,6 +1845,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after{
    -moz-transition: 350ms;
    -o-transition: 350ms;
    transition: 350ms;
+   margin-top: 10px;
 }
 
 .ts-service-box .ts-service-box-content {
